@@ -1,20 +1,22 @@
 import React from "react"
 import Header from "./Header"
 import Footer from "./Footer"
-import Note from "./Note"
-import notes from "../notes"
+import User from "./User"
+import listOfUsers from "../listOfUsers"
 
 function App() {
   return (
       <div>
         <Header />
-        {notes.map(noteItem => (
-            <Note
-                key={noteItem.key}
-                title={noteItem.title}
-                content={noteItem.content}
+
+        {listOfUsers.map(user => (
+            <User
+                key={user.key}
+                name={user.name}
+                role={user.role}
             />
         ))}
+
         <Footer />
       </div>
   );

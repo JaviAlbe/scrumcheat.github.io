@@ -1,4 +1,4 @@
-const listOfWorkers = [
+const listOfUsers = [
     {
         key: 1,
         name: "Javier",
@@ -36,4 +36,4 @@ const listOfWorkers = [
     }
 ]
 
-export default listOfWorkers
+export default listOfUsers

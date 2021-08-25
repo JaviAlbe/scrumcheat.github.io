@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     font-family: "Montserrat", sans-serif;
 }
+
 body {
     background: #eee;
     padding: 0 16px;
@@ -35,22 +37,43 @@ footer {
 footer p {
     color: #ccc;
 }
-.note {
+
+.worker {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
-    padding: 10px;
-    width: 240px;
+    padding: 8px;
+    width: fit-content;
     margin: 16px;
     float: left;
 }
-.note h1 {
+
+.worker h1 {
     font-size: 1.1em;
     margin-bottom: 6px;
 }
-.note p {
+
+.worker p {
     font-size: 1.1em;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+.user-profile-picture {
+    height: 50px;
+    width: 50px;
+}
+
+.worker-profile-picture-container {
+    width: fit-content;
+    margin: 10px;
+}
+
+.worker-profile-picture-info {
+    width: fit-content;
+    margin: 10px;
 }
