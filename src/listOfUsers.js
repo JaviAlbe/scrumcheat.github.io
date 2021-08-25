@@ -1,35 +1,35 @@
 const listOfUsers = [
     {
-        key: 1,
+        key: 0,
         name: "Javier",
+        role: "Android Developer",
+        scratched: false,
+        onHolidays: false
+    },
+    {
+        key: 1,
+        name: "David",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
         key: 2,
-        name: "Javier",
+        name: "Vicente",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
         key: 3,
-        name: "Javier",
+        name: "Miguel",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
         key: 4,
-        name: "Javier",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
-        key: 5,
-        name: "Javier",
+        name: "Virginia",
         role: "Android Developer",
         scratched: false,
         onHolidays: false

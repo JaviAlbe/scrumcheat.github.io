@@ -38,7 +38,7 @@ footer p {
     color: #ccc;
 }
 
-.worker {
+.card {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -51,29 +51,55 @@ footer p {
     float: left;
 }
 
-.worker h1 {
+.card h1 {
     font-size: 1.1em;
     margin-bottom: 6px;
 }
 
-.worker p {
+.card p {
     font-size: 1.1em;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
-.user-profile-picture {
+.card-profile-picture {
     height: 50px;
     width: 50px;
 }
 
-.worker-profile-picture-container {
+.card-profile-picture-container {
     width: fit-content;
     margin: 10px;
 }
 
-.worker-profile-picture-info {
+.card-profile-picture-info {
     width: fit-content;
     margin: 10px;
 }
+
+.clickedCard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #ffb687;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 8px;
+    width: fit-content;
+    margin: 16px;
+    float: left;
+}
+
+.clickedCard h1{
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.clickedCard p{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
