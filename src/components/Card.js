@@ -21,7 +21,6 @@ function Card(props) {
                 <p>{props.role}</p>
             </div>
 
-
         </div>
     )
 }

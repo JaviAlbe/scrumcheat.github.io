@@ -39,6 +39,7 @@ footer p {
 }
 
 .card {
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -54,6 +55,7 @@ footer p {
 .card h1 {
     font-size: 1.1em;
     margin-bottom: 6px;
+    user-select: none;
 }
 
 .card p {
@@ -61,11 +63,13 @@ footer p {
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    user-select: none;
 }
 
 .card-profile-picture {
     height: 50px;
     width: 50px;
+    user-select: none;
 }
 
 .card-profile-picture-container {
@@ -80,6 +84,7 @@ footer p {
 
 .clickedCard {
     display: flex;
+    cursor: pointer;
     justify-content: space-between;
     flex-direction: row;
     background: #ffb687;
@@ -91,15 +96,17 @@ footer p {
     float: left;
 }
 
-.clickedCard h1{
+.clickedCard h1 {
     font-size: 1.1em;
     margin-bottom: 6px;
+    user-select: none;
 }
 
-.clickedCard p{
+.clickedCard p {
     font-size: 1.1em;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;
+    user-select: none;
 }
 

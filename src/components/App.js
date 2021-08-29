@@ -6,42 +6,31 @@ import listOfUsers from "../listOfUsers"
 
 function App() {
 
-    let currentListOfUsers = listOfUsers
-
-    const [scratched, updateScratched] = useState(false)
-
-    //let tempScratched = false
+    const [listOfPeople, setListOfPeople] = useState(listOfUsers)
 
     function toggleScratchedStatus(card){
-        // console.log("I've clicked " + card.name + " whose scratched status is: " + card.scratched)
-
-        console.log("Before the click: " + currentListOfUsers[card.key].scratched)
 
         //Toggle to scratch and unscratch cards
-        if(scratched){
-            updateScratched(false)
+        if(card.scratched){
+            listOfPeople[card.key].scratched = false
+            setListOfPeople([...listOfPeople])
         }else{
-            updateScratched(true)
+            listOfPeople[card.key].scratched = true
+            setListOfPeople([...listOfPeople])
         }
-
-        currentListOfUsers[card.key].scratched = scratched
-
-        // console.log(card.name + " is now set to " + card.scratched)
-
-        console.log("After the click: " + currentListOfUsers[card.key].scratched)
-
     }
 
+    console.log(listOfPeople)
   return (
       <div>
         <Header />
 
-        {currentListOfUsers.map(card => (
+        {listOfPeople.map(card => (
             <Card
                 key={card.key}
                 name={card.name}
                 role={card.role}
-                scratched={currentListOfUsers[card.key].scratched}
+                scratched={card.scratched}
                 onClick={() => toggleScratchedStatus(card)}
             />
         ))}
