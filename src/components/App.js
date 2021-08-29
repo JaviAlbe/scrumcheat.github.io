@@ -1,20 +1,40 @@
-import React from "react"
+import React, {useState} from "react"
 import Header from "./Header"
 import Footer from "./Footer"
-import Note from "./Note"
-import notes from "../notes"
+import Card from "./Card"
+import listOfUsers from "../listOfUsers"
 
 function App() {
+
+    const [listOfPeople, setListOfPeople] = useState(listOfUsers)
+
+    function toggleScratchedStatus(card){
+
+        //Toggle to scratch and unscratch cards
+        if(card.scratched){
+            listOfPeople[card.key].scratched = false
+            setListOfPeople([...listOfPeople])
+        }else{
+            listOfPeople[card.key].scratched = true
+            setListOfPeople([...listOfPeople])
+        }
+    }
+
+    console.log(listOfPeople)
   return (
       <div>
         <Header />
-        {notes.map(noteItem => (
-            <Note
-                key={noteItem.key}
-                title={noteItem.title}
-                content={noteItem.content}
+
+        {listOfPeople.map(card => (
+            <Card
+                key={card.key}
+                name={card.name}
+                role={card.role}
+                scratched={card.scratched}
+                onClick={() => toggleScratchedStatus(card)}
             />
         ))}
+
         <Footer />
       </div>
   );
