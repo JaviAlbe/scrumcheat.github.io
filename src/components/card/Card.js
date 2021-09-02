@@ -1,5 +1,6 @@
 import React from "react"
-import profilePicture from "../assets/profile-picture-placeholder.png"
+import "./card.css"
+import profilePicture from "../../assets/profile-picture-placeholder.png"
 
 function Card(props) {
 

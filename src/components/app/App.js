@@ -1,8 +1,9 @@
 import React, {useState} from "react"
-import Header from "./Header"
-import Footer from "./Footer"
-import Card from "./Card"
-import listOfUsers from "../listOfUsers"
+import "./app.css"
+import Header from "../header/Header"
+import Footer from "../footer/Footer"
+import Card from "../card/Card"
+import listOfUsers from "../../listOfUsers"
 
 function App() {
 
