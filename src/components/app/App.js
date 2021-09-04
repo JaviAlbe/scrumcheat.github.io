@@ -4,6 +4,7 @@ import Header from "../header/Header"
 import Footer from "../footer/Footer"
 import Card from "../card/Card"
 import listOfUsers from "../../listOfUsers"
+import Joke from "../joke/Joke";
 
 function App() {
 
@@ -57,7 +58,7 @@ function App() {
                 </div>
 
                 <div className={"joke-container"}>
-                    <p>{joke}</p>
+                    <Joke joke={joke}/>
                 </div>
 
             </div>
