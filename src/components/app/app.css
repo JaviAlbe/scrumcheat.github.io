@@ -1,14 +1,28 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-html {
-    font-family: "Montserrat", sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #eee;
-    padding: 0 16px;
+    background-color: #F0F8FF;
+}
+
+.main-container{
+    display: flex;
+    background-color: #F0F8FF;
+    flex-direction: column;
+}
+
+.cards-container{
+    width: 100%;
+    height: fit-content;
+    background-color: #F0F8FF;
+}
+
+.joke-container{
+    width: 100%;
+    height: fit-content;
+    background-color: #87CEEB;
 }

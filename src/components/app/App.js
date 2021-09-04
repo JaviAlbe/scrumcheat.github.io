@@ -7,7 +7,7 @@ import listOfUsers from "../../listOfUsers"
 
 function App() {
 
-    const[joke, setJoke] = useState("This is a placeholder for a joke")
+    const [joke, setJoke] = useState("This is a placeholder for a joke")
 
     useEffect(() => {
 
@@ -42,23 +42,28 @@ function App() {
         <div>
             <Header/>
 
-            {listOfPeople.map(card => (
-                <Card
-                    key={card.key}
-                    name={card.name}
-                    role={card.role}
-                    scratched={card.scratched}
-                    onClick={() => toggleScratchedStatus(card)}
-                />
-            ))}
+            <div className={"main-container"}>
 
-            <div>
-                <p>
-                    {joke}
-                </p>
+                <div className={"cards-container"}>
+                    {listOfPeople.map(card => (
+                        <Card
+                            key={card.key}
+                            name={card.name}
+                            role={card.role}
+                            scratched={card.scratched}
+                            onClick={() => toggleScratchedStatus(card)}
+                        />
+                    ))}
+                </div>
+
+                <div className={"joke-container"}>
+                    <p>{joke}</p>
+                </div>
+
             </div>
 
             <Footer/>
+
         </div>
     );
 }
