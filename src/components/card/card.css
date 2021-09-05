@@ -1,7 +1,6 @@
 .card {
     cursor: pointer;
     display: flex;
-    /*justify-content: space-between;*/
     flex-direction: row;
     background: #fff;
     border-radius: 7px;
@@ -10,6 +9,10 @@
     width: 275px;
     margin: 16px;
     float: left;
+}
+
+.card:hover{
+    background: #4682B4;
 }
 
 .card h1 {
@@ -49,16 +52,14 @@
 }
 
 .clickedCard {
-    display: flex;
     cursor: pointer;
-    justify-content: space-between;
+    display: flex;
     flex-direction: row;
-    background-color: #fdac98;
+    background: #b0e0e6;
     border-radius: 7px;
     box-shadow: 0 2px 5px #ccc;
     padding: 8px;
-    width: fit-content;
-    min-width: 300px;
+    width: 275px;
     margin: 16px;
     float: left;
 }

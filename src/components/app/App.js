@@ -4,7 +4,7 @@ import Header from "../header/Header"
 import Footer from "../footer/Footer"
 import Card from "../card/Card"
 import listOfUsers from "../../listOfUsers"
-import Joke from "../joke/Joke";
+import LoadJokeBtn from "../joke/LoadJokeBtn";
 
 function App() {
 
@@ -58,7 +58,14 @@ function App() {
                 </div>
 
                 <div className={"joke-container"}>
-                    <Joke joke={joke}/>
+                    <div className={"joke-text-container"}>
+                        <p className={"joke-text"}>This is a joke</p>
+                    </div>
+
+                    <div className={"load-btn-container"}>
+                        <LoadJokeBtn onClick={()=>console.log("I've clicked the Load Joke Btn")}/>
+                    </div>
+
                 </div>
 
             </div>
