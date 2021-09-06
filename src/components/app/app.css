@@ -27,16 +27,17 @@ body {
     height: fit-content;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #87CEEB;
+    background-color: #b9e7ff;
 }
 
 .joke-text-container{
     width: fit-content;
     display: flex;
+    flex-direction: column;
     height: fit-content;
     justify-content: center;
     margin: 16px;
-    background-color: #cccccc;
+    /*background-color: #cccccc;*/
 }
 .joke-text{
     font-size: 1.1em;
@@ -50,5 +51,5 @@ body {
     display: flex;
     justify-content: flex-end;
     height: fit-content;
-    background-color: #ffb687;
+    /*background-color: #ffb687;*/
 }

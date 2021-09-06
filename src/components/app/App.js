@@ -12,17 +12,33 @@ function App() {
 
     useEffect(() => {
 
+        const url = "https://official-joke-api.appspot.com/random_joke"
+
+        const fetchData = async () => {
+            const response = await fetch(url)
+            const json = await response.json()
+            console.log(json)
+            setJoke(json)
+        }
+        fetchData()
+    }, [])
+
+    /**
+     * Big list
+     * useEffect(() => {
+
         const url = "http://api.icndb.com/jokes/"
 
         const fetchData = async () => {
             const response = await fetch(url)
             const json = await response.json()
             console.log(json)
-            setJoke(json.value[1].joke)
+            localListOfJokes.push(json.value)
+            console.log(localListOfJokes)
         }
         fetchData()
     }, [])
-
+     * */
 
     const [listOfPeople, setListOfPeople] = useState(listOfUsers)
 
@@ -59,11 +75,12 @@ function App() {
 
                 <div className={"joke-container"}>
                     <div className={"joke-text-container"}>
-                        <p className={"joke-text"}>This is a joke</p>
+                        <p className={"joke-text"}>{"-" + joke.setup}</p>
+                        <p className={"joke-text"}>{"..." + joke.punchline}</p>
                     </div>
 
                     <div className={"load-btn-container"}>
-                        <LoadJokeBtn onClick={()=>console.log("I've clicked the Load Joke Btn")}/>
+                        <LoadJokeBtn onClick={() => console.log("Btn Clicked")}/>
                     </div>
 
                 </div>
