@@ -12,7 +12,10 @@ function App() {
 
     useEffect(() => {
 
-        const url = "https://official-joke-api.appspot.com/random_joke"
+        //Not working
+        // const url = "https://official-joke-api.appspot.com/random_joke"
+
+        const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,sexist&type=twopart"
 
         const fetchData = async () => {
             const response = await fetch(url)
@@ -76,11 +79,11 @@ function App() {
                 <div className={"joke-container"}>
                     <div className={"joke-text-container"}>
                         <p className={"joke-text"}>{"-" + joke.setup}</p>
-                        <p className={"joke-text"}>{"..." + joke.punchline}</p>
+                        <p className={"joke-text"}>{"..." + joke.delivery}</p>
                     </div>
 
                     <div className={"load-btn-container"}>
-                        <LoadJokeBtn onClick={() => console.log("Btn Clicked")}/>
+                        {/*<LoadJokeBtn onClick={() => console.log("Btn Clicked")}/>*/}
                     </div>
 
                 </div>
