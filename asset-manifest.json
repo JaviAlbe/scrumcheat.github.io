@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/scrumcheat.github.io/static/css/main.b040caa6.chunk.css",
+    "main.js": "/scrumcheat.github.io/static/js/main.8932deba.chunk.js",
+    "main.js.map": "/scrumcheat.github.io/static/js/main.8932deba.chunk.js.map",
+    "runtime-main.js": "/scrumcheat.github.io/static/js/runtime-main.ca2ed286.js",
+    "runtime-main.js.map": "/scrumcheat.github.io/static/js/runtime-main.ca2ed286.js.map",
+    "static/js/2.95e52db9.chunk.js": "/scrumcheat.github.io/static/js/2.95e52db9.chunk.js",
+    "static/js/2.95e52db9.chunk.js.map": "/scrumcheat.github.io/static/js/2.95e52db9.chunk.js.map",
+    "index.html": "/scrumcheat.github.io/index.html",
+    "static/css/main.b040caa6.chunk.css.map": "/scrumcheat.github.io/static/css/main.b040caa6.chunk.css.map",
+    "static/js/2.95e52db9.chunk.js.LICENSE.txt": "/scrumcheat.github.io/static/js/2.95e52db9.chunk.js.LICENSE.txt",
+    "static/media/profile-picture-placeholder.d54b5cea.png": "/scrumcheat.github.io/static/media/profile-picture-placeholder.d54b5cea.png",
+    "static/media/reload-icon.d0d7e71e.png": "/scrumcheat.github.io/static/media/reload-icon.d0d7e71e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca2ed286.js",
+    "static/js/2.95e52db9.chunk.js",
+    "static/css/main.b040caa6.chunk.css",
+    "static/js/main.8932deba.chunk.js"
+  ]
+}
