@@ -1,4 +1,5 @@
 {
+  "homepage": "https://javialbe.github.io/scrumcheat/",
   "name": "scrum-cheat",
   "version": "0.1.0",
   "private": true,
@@ -12,9 +13,12 @@
     "web-vitals": "^1.1.2"
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "typescript": "3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

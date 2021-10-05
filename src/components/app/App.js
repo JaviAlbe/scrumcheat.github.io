@@ -4,6 +4,7 @@ import Header from "../header/Header"
 import Footer from "../footer/Footer"
 import Card from "../card/Card"
 import listOfUsers from "../../listOfUsers"
+import LoadJokeBtn from "../joke/LoadJokeBtn";
 
 function App() {
 
@@ -11,17 +12,36 @@ function App() {
 
     useEffect(() => {
 
+        //Not working
+        // const url = "https://official-joke-api.appspot.com/random_joke"
+
+        const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,sexist&type=twopart"
+
+        const fetchData = async () => {
+            const response = await fetch(url)
+            const json = await response.json()
+            console.log(json)
+            setJoke(json)
+        }
+        fetchData()
+    }, [])
+
+    /**
+     * Big list
+     * useEffect(() => {
+
         const url = "http://api.icndb.com/jokes/"
 
         const fetchData = async () => {
             const response = await fetch(url)
             const json = await response.json()
             console.log(json)
-            setJoke(json.value[1].joke)
+            localListOfJokes.push(json.value)
+            console.log(localListOfJokes)
         }
         fetchData()
     }, [])
-
+     * */
 
     const [listOfPeople, setListOfPeople] = useState(listOfUsers)
 
@@ -57,7 +77,15 @@ function App() {
                 </div>
 
                 <div className={"joke-container"}>
-                    <p>{joke}</p>
+                    <div className={"joke-text-container"}>
+                        <p className={"joke-text"}>{"-" + joke.setup}</p>
+                        <p className={"joke-text"}>{"..." + joke.delivery}</p>
+                    </div>
+
+                    <div className={"load-btn-container"}>
+                        {/*<LoadJokeBtn onClick={() => console.log("Btn Clicked")}/>*/}
+                    </div>
+
                 </div>
 
             </div>
