@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/scrumcheat.github.io/static/css/main.b040caa6.chunk.css",
-    "main.js": "/scrumcheat.github.io/static/js/main.2821c9fa.chunk.js",
-    "main.js.map": "/scrumcheat.github.io/static/js/main.2821c9fa.chunk.js.map",
+    "main.js": "/scrumcheat.github.io/static/js/main.6c7d5a8d.chunk.js",
+    "main.js.map": "/scrumcheat.github.io/static/js/main.6c7d5a8d.chunk.js.map",
     "runtime-main.js": "/scrumcheat.github.io/static/js/runtime-main.ca2ed286.js",
     "runtime-main.js.map": "/scrumcheat.github.io/static/js/runtime-main.ca2ed286.js.map",
     "static/js/2.95e52db9.chunk.js": "/scrumcheat.github.io/static/js/2.95e52db9.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ca2ed286.js",
     "static/js/2.95e52db9.chunk.js",
     "static/css/main.b040caa6.chunk.css",
-    "static/js/main.2821c9fa.chunk.js"
+    "static/js/main.6c7d5a8d.chunk.js"
   ]
 }
