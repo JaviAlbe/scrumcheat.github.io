@@ -10,10 +10,8 @@ function App() {
 
     const [joke, setJoke] = useState("This is a placeholder for a joke")
 
+    /**This, passed with an empty array, gets galled when the app loads*/
     useEffect(() => {
-
-        //Not working
-        // const url = "https://official-joke-api.appspot.com/random_joke"
 
         const url = "https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,sexist&type=twopart"
 
@@ -26,23 +24,7 @@ function App() {
         fetchData()
     }, [])
 
-    /**
-     * Big list
-     * useEffect(() => {
-
-        const url = "http://api.icndb.com/jokes/"
-
-        const fetchData = async () => {
-            const response = await fetch(url)
-            const json = await response.json()
-            console.log(json)
-            localListOfJokes.push(json.value)
-            console.log(localListOfJokes)
-        }
-        fetchData()
-    }, [])
-     * */
-
+    /**Hook to re-render the clicked card*/
     const [listOfPeople, setListOfPeople] = useState(listOfUsers)
 
     function toggleScratchedStatus(card) {
@@ -57,13 +39,11 @@ function App() {
         }
     }
 
-    console.log(listOfPeople)
     return (
         <div>
             <Header/>
 
             <div className={"main-container"}>
-
                 <div className={"cards-container"}>
                     {listOfPeople.map(card => (
                         <Card
@@ -77,21 +57,18 @@ function App() {
                 </div>
 
                 <div className={"joke-container"}>
+                    <h1>Hello</h1>
                     <div className={"joke-text-container"}>
                         <p className={"joke-text"}>{"-" + joke.setup}</p>
                         <p className={"joke-text"}>{"..." + joke.delivery}</p>
                     </div>
 
                     <div className={"load-btn-container"}>
-                        {/*<LoadJokeBtn onClick={() => console.log("Btn Clicked")}/>*/}
                     </div>
-
                 </div>
-
             </div>
 
             <Footer/>
-
         </div>
     );
 }
