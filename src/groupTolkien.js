@@ -1,62 +1,62 @@
 const groupTolkien = [
     {
-        key: 1,
+        key: 0,
         name: "Denis",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 2,
+        key: 1,
         name: "Gomez",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 4,
+        key: 2,
         name: "Isla",
         role: "Project Manager",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 6,
+        key: 3,
         name: "Javier",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 7,
+        key: 4,
         name: "Jorge",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 11,
+        key: 5,
         name: "Mikel",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 13,
+        key: 6,
         name: "Rafa",
         role: "QA Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 14,
+        key: 7,
         name: "Sergio",
         role: "Technical Lead",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 15,
+        key: 8,
         name: "Vicente",
         role: "Android Developer",
         scratched: false,

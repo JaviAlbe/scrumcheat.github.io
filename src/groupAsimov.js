@@ -7,56 +7,56 @@ const groupAsimov = [
         onHolidays: false
     },
     {
-        key: 3,
+        key: 1,
         name: "Gonzalez",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 4,
+        key: 2,
         name: "Isla",
         role: "Project Manager",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 5,
+        key: 3,
         name: "Luis",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 8,
+        key: 4,
         name: "Jose",
         role: "Technical Lead",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 9,
+        key: 5,
         name: "Juan",
         role: "QA Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 10,
+        key: 6,
         name: "Miguel",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 12,
+        key: 7,
         name: "Natalia",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
     },
     {
-        key: 16,
+        key: 8,
         name: "Virginia",
         role: "Android Developer",
         scratched: false,
