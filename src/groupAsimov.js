@@ -1,21 +1,7 @@
-const listOfUsers = [
+const groupAsimov = [
     {
         key: 0,
         name: "Aritz",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
-        key: 1,
-        name: "Denis",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
-        key: 2,
-        name: "Gomez",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
@@ -42,23 +28,9 @@ const listOfUsers = [
         onHolidays: false
     },
     {
-        key: 6,
-        name: "Javier",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
-        key: 7,
-        name: "Jorge",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
         key: 8,
         name: "Jose",
-        role: "Android Developer",
+        role: "Technical Lead",
         scratched: false,
         onHolidays: false
     },
@@ -77,36 +49,8 @@ const listOfUsers = [
         onHolidays: false
     },
     {
-        key: 11,
-        name: "Mikel",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
         key: 12,
         name: "Natalia",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
-        key: 13,
-        name: "Rafa",
-        role: "QA Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
-        key: 14,
-        name: "Sergio",
-        role: "Android Developer",
-        scratched: false,
-        onHolidays: false
-    },
-    {
-        key: 15,
-        name: "Vicente",
         role: "Android Developer",
         scratched: false,
         onHolidays: false
@@ -122,4 +66,4 @@ const listOfUsers = [
 
 
 
-export default listOfUsers
+export default groupAsimov

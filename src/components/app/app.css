@@ -21,6 +21,18 @@ body {
     background-color: #F0F8FF;
 }
 
+.cards-tolkien{
+    width: 100%;
+    height: fit-content;
+    background-color: #F0F8FF;
+}
+
+.cards-asimov{
+    width: 100%;
+    height: fit-content;
+    background-color: #f4eff8;
+}
+
 .joke-container{
     width: 100%;
     display: flex;
